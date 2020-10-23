@@ -8,7 +8,7 @@ SCHEMA = 'id:INTEGER,namekey:STRING'
 
 def discard_incomplete(data):
     """Filters out records that don't have an information."""
-    return len(data['id']) > 0 and len(data['namekey']) > 0 and len(data['namekey']) > 0 and len(data['status']) > 0
+    return len(data['id']) > 0 and len(data['namekey']) > 0
 
 
 def convert_types(data):
